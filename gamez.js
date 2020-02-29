@@ -28,7 +28,7 @@ let rightArrow = false;
 //CREATING THE PADDLE
 
 const paddle = {
-    x : 0,
+    x : cvs.width/2 - PADDLE_WIDTH/2,
     y : cvs.height - PADDLE_MARGIN_BOTTOM - PADDLE_HEIGHT,
     width : PADDLE_WIDTH,
     height : PADDLE_HEIGHT,
@@ -41,8 +41,8 @@ function drawPaddle(){
     ctx.fillStyle = "#ffcc99";
     ctx.fillRect(paddle.x, paddle.y, paddle.width, paddle.height);
 
-    // ctx.strokeStyle = "#ff00ff";
-    // ctx.strokeRect(paddle.x, paddle.y, paddle.width, paddle.height);
+    ctx.strokeStyle = "#ffffff";
+    ctx.strokeRect(paddle.x, paddle.y, paddle.width, paddle.height);
 }
 
 //CONTROLLING THE PADDLE
@@ -79,7 +79,7 @@ const ball ={
     x : cvs.width/2,
     y : paddle.y - BALL_RADIUS,
     radius : BALL_RADIUS,
-    speed : 4,
+    speed : 8,
     dx : 3 * (Math.random() * 2 - 1),
     dy : -3
 }
