@@ -1,8 +1,50 @@
 #breakout {
     background-color: #ffcc99;
-    background-image: url("img/bg6.jpg");
+    background-image: url("img/bg4.jpg");
     /* background-image: url("img/bg1.jpg"); */
+    margin-left: 250px;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
   }
+
+  #sound{
+    width: 30px;
+    height : 30px;
+    cursor: pointer;
+    position: absolute;
+    top : 480px;
+    left : 265px;
+}
+
+
+#gameover{
+  position: absolute;
+  margin-left: 250px;
+  width : 400px;
+  height: 500px;
+  background: rgba(0,0,0,0.5);
+  display: none;
+}
+#youwon{
+  width: 100px;
+  position: absolute;
+  top : 200px;
+  left : 150px;
+  display: none;
+}
+#youlose{
+  width:400px;
+  position: absolute;
+  top: 100px;
+  left : 0px;
+  display: none;
+}
+#restart{
+  position: absolute;
+  top: 310px;
+  left : 155px;
+  cursor: pointer;
+  font-size: 1.25em;
+  color : #FFF;
+}
